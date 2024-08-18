@@ -51,7 +51,7 @@ class SyncFolder
         
         if (!replicaDir.Exists)
         {
-            Directory.CreateDirectory(replica);
+            Directory.CreateDirectory(replica ?? throw new ArgumentNullException(nameof(replica)));
             Log($"Created directory {replica}", logFile);
             return;
         }
@@ -65,7 +65,7 @@ class SyncFolder
 
             if (!replicaFile.Exists || !FilesAreEqual(file, replicaFile))
             {
-                Directory.CreateDirectory(replicaFile.DirectoryName);
+                Directory.CreateDirectory(replicaFile.DirectoryName!);
                 file.CopyTo(replicaFile.FullName, true);
                 Log($"Copied file {file.FullName} to {replicaFile.FullName}", logFile);
             }
