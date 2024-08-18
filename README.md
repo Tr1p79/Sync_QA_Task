@@ -1,6 +1,6 @@
 # SyncFolder Application
 
-This application synchronizes two folders at a specified interval. 
+This application synchronizes source folder and replica folder at a specified interval. 
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ The project is targeting .NET 6.0 to ensure broad compatibility and stability. [
    git clone https://github.com/Tr1p79/Sync_QA_Task.git
     
 2. Navigate to the directory:
-   cd cd Sync_QA_Task\SyncFolder
+   cd Sync_QA_Task\SyncFolder
 
 3. Build the project:
     dotnet build -c Release
