@@ -10,15 +10,17 @@ The project is targeting .NET 6.0 to ensure broad compatibility and stability. [
 
 1. Clone the repository:
    git clone https://github.com/Tr1p79/Sync_QA_Task.git
-   cd SyncFolder
+    
+2. Navigate to the directory:
+   cd cd Sync_QA_Task\SyncFolder
 
-2. Build the project:
+3. Build the project:
     dotnet build -c Release
 
 ## Running the Application
 
 1. Navigate to the output directory:
-    cd bin/Release/net6.0
+    cd bin\Release\net6.0
 
 2. Run the executable 
     Usage: SyncFolder <source> <replica> <interval> <logFile>
