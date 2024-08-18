@@ -33,7 +33,7 @@ The project is targeting .NET 6.0 to ensure broad compatibility and stability. [
     Example:
     - SyncFolder.exe "C:\Source" "C:\Replica" 60 "C:\Logs\sync.log"
     - or 
-    - ./SyncFolder "C:\Source" "C:\Replica" 60 "C:\Logs\sync.log"
+    - ./SyncFolder.exe "C:\Source" "C:\Replica" 60 "C:\Logs\sync.log"
 
 
 
